@@ -391,6 +391,10 @@ p {
   grid-template-columns: repeat(1, 1fr);
 }
 
+.about__image {
+  container-type: inline-size;
+}
+
 .about__image img {
   display: block;
   aspect-ratio: 1 / 1;
@@ -404,6 +408,18 @@ p {
 
 .about__text {
   color: #000;
+}
+
+@container (min-width: 40em) {
+  .about__image img {
+    aspect-ratio: 6 / 4;
+  }
+}
+
+@container (min-width: 50em) {
+  .about__image img {
+    aspect-ratio: 6 / 3;
+  }
 }
 
 /* ----- RECENT BLOG POSTS ----- */
@@ -453,14 +469,10 @@ p {
 
 /* ----- BLOG POST HTML STYLING ----- */
 
-main {
-  container: sidebar / inline-size;
-}
-
 /* ----- BANNER ----- */
 
 .blog--banner {
-  background-image: linear-gradient(to bottom, #0009, #0000),
+  background-image: linear-gradient(to bottom, #0009 60%, #0000),
     url(../images/blog-image-adventurers.jpg);
   background-position: bottom;
   background-size: cover;
@@ -506,29 +518,6 @@ main {
   gap: 0.525rem;
 }
 
-@container sidebar (min-width: 65em) {
-  .article--body .container {
-    grid-template-areas:
-      "intro sidebar"
-      "callout sidebar"
-      "content sidebar"
-      "footer sidebar"
-      "article sidebar";
-    grid-template-columns: 60% 1fr;
-  }
-
-  .related--blog--posts {
-    position: sticky;
-    top: 0;
-    align-self: start;
-    grid-area: sidebar;
-  }
-
-  .related--blog--posts h3 {
-    font-size: 1.15rem;
-  }
-}
-
 .article--body :where(h2, h3, a) {
   color: var(--secondary-color);
 }
@@ -564,7 +553,7 @@ main {
 }
 
 .article--content__image {
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   display: flex;
   margin-bottom: 1.5rem;
 }
@@ -750,6 +739,7 @@ main {
 }
 
 /* ----- MEDIA QUERY 65EM ----- */
+
 @media only screen and (min-width: 65em) {
   /* ----- HEADER ----- */
 
@@ -866,5 +856,26 @@ main {
 
   .banner__tags a {
     --text--font-size: 1.15rem;
+  }
+
+  .article--body .container {
+    grid-template-areas:
+      "intro sidebar"
+      "callout sidebar"
+      "content sidebar"
+      "footer sidebar"
+      "article sidebar";
+    grid-template-columns: 60% 1fr;
+  }
+
+  .related--blog--posts {
+    position: sticky;
+    top: 0;
+    align-self: start;
+    grid-area: sidebar;
+  }
+
+  .related--blog--posts h3 {
+    font-size: 1.15rem;
   }
 }
