@@ -260,7 +260,7 @@ h3 {
 /* BANNER */
 .main--banner {
   background-image: linear-gradient(to bottom, #0008, #0008),
-    url(images/hero-banner.jpg);
+    url(../images/hero-banner.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -440,7 +440,7 @@ main {
 /* BANNER */
 .blog--banner {
   background-image: linear-gradient(to bottom, #0009, #0000),
-    url(images/blog-image-adventurers.jpg);
+    url(../images/blog-image-adventurers.jpg);
   background-position: bottom;
   background-size: cover;
   display: flex;
