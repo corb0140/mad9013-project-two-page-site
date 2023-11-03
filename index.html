@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Homepage</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <a href="/" class="header__logo">
+          <img src="/images/logo-ac.svg" alt="Adventure Co. logo" />
+        </a>
+
+        <nav class="header--nav nav--hidden">
+          <ul class="header--nav__list">
+            <li><a href="#" class="nav__link">About</a></li>
+            <li><a href="/blog-post.html" class="nav__link">Blog</a></li>
+            <li><a href="#" class="nav__link">Download</a></li>
+            <li><a href="#" class="nav__link">Sign Up</a></li>
+          </ul>
+        </nav>
+
+        <nav class="header--nav-mobile">
+          <ul class="header--nav__list">
+            <li><a href="#" class="nav__link">About</a></li>
+            <li><a href="/blog-post.html" class="nav__link">Blog</a></li>
+            <li><a href="#" class="nav__link">Download</a></li>
+            <li><a href="#" class="nav__link">Sign Up</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav--hamburger-menu">
+          <div class="nav--hamburger-menu__line"></div>
+          <div class="nav--hamburger-menu__line"></div>
+          <div class="nav--hamburger-menu__line"></div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <section class="main">
+      <!-- BANNER -->
+      <section class="banner main--banner">
+        <div class="container">
+          <h1 class="banner__title">Welcome to Adventure Co!</h1>
+
+          <p class="banner__text">
+            An app built for adventurers seeking fame, fortune, and a well
+            organized gameplay experience!
+          </p>
+
+          <a href="#" class="btn btn--large">Download the app!</a>
+        </div>
+      </section>
+
+      <!-- CARD GROUP -->
+      <section class="card--group">
+        <div class="container container--grid">
+          <a href="#" class="card">
+            <div class="card__icon">
+              <img
+                src="images/card-character.svg"
+                alt="image depicting dnd character"
+              />
+            </div>
+
+            <div class="card__content">
+              <h3 class="card__title">Create a character!</h3>
+              <p class="card__text">
+                Get started with your very first character.
+              </p>
+            </div>
+          </a>
+
+          <a href="#" class="card">
+            <div class="card__icon">
+              <img
+                src="images/card-party.svg"
+                alt="image depicting dnd party"
+              />
+            </div>
+
+            <div class="card__content">
+              <h3 class="card__title">Form a party!</h3>
+              <p class="card__text">Connect with friends and team up.</p>
+            </div>
+          </a>
+
+          <a href="#" class="card">
+            <div class="card__icon">
+              <img
+                src="images/card-items.svg"
+                alt="image depicting dnd items"
+              />
+            </div>
+
+            <div class="card__content">
+              <h3 class="card__title">Find an item!</h3>
+              <p class="card__text">
+                Add fantastic items too boost your character.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about">
+        <div class="container container--grid">
+          <div class="about__image">
+            <img src="images/about.jpg" alt="image of knights on horseback" />
+          </div>
+
+          <div class="about__content">
+            <h2 class="about__title">About Adventure Co.</h2>
+
+            <p class="about__text">
+              Adventure Co. is a cooperative storytelling companion for D&D that
+              uses your imagination and invites you to adventure, battle,
+              discover, and complete epic quests with your friends through an
+              immersive RPG experience. Your first adventure is only a dice roll
+              away!
+            </p>
+
+            <a href="#" class="btn btn--large">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- RECENT BLOG POSTS -->
+      <section class="recent--blog--posts">
+        <div class="container container--grid">
+          <h2 class="recent--blog--posts__title">Recent Blog Posts</h2>
+
+          <a href="/blog-post.html" class="post">
+            <h3 class="post__title">
+              One-Shot Adventures: What They Are, Why We Love Them, and
+              Recommendations
+            </h3>
+
+            <p class="post__text">by Mike Bernier</p>
+          </a>
+
+          <a href="#" class="post">
+            <h3 class="post__title">
+              5 Tips for Running the Death House One-Shot From Curse of Strahd
+            </h3>
+
+            <p class="post__text">by Jeremy Blum</p>
+          </a>
+
+          <a href="#" class="post">
+            <h3 class="post__title">
+              How to Mashup D&D Sourcebooks for Versatile Storytelling
+            </h3>
+
+            <p class="post__text">by Riley Silverman</p>
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <a href="/" class="footer__logo">
+          <img src="/images/logo-ac.svg" alt="Adventure Co. logo" />
+        </a>
+
+        <nav class="footer--nav">
+          <ul class="footer--nav__list">
+            <li><a href="#" class="nav__link">About</a></li>
+            <li><a href="/blog-post.html" class="nav__link">Blog</a></li>
+            <li><a href="#" class="nav__link">Download</a></li>
+            <li><a href="#" class="nav__link">Sign Up</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__notice">
+          <small>&copy; 2022 Adventure Co-Operative</small>
+
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>
