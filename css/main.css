@@ -153,8 +153,10 @@ h3 {
   font-weight: 700;
 }
 
-/* INDEX STYLING */
-/* HEADER */
+/* ----- INDEX PAGE STYLING ----- */
+
+/* ----- HEADER ----- */
+
 .header {
   --header--shadow: 0 0.255rem 0.25rem rgba(0, 0, 0, 0.075);
   position: sticky;
@@ -255,9 +257,8 @@ h3 {
   transition: all 0.5s ease-in-out;
 }
 
-/* END HEADER */
+/* ----- BANNER ----- */
 
-/* BANNER */
 .main--banner {
   background-image: linear-gradient(to bottom, #0008, #0008),
     url(../images/hero-banner.jpg);
@@ -290,10 +291,11 @@ h3 {
   font-size: var(--text--font-size);
   text-align: var(--text-align);
 }
-/* END BANNER */
 
-/* INDEX MAIN */
-/* CARD GROUP */
+/* ----- MAIN ----- */
+
+/* ----- CARD GROUP ----- */
+
 .card--group {
   background-color: var(--dominant-color);
   padding: 1.5rem 0;
@@ -355,9 +357,9 @@ h3 {
 .card :where(.card__title, .card__text) {
   text-align: center;
 }
-/* END CARD GROUP */
 
-/* ABOUT */
+/* ----- ABOUT ----- */
+
 .about .container--grid {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -381,9 +383,9 @@ h3 {
 .about__text {
   color: #000;
 }
-/* END ABOUT */
 
-/* RECENT BLOG POSTS */
+/* ----- RECENT BLOG POSTS ----- */
+
 .recent--blog--posts {
   background-color: var(--accent-color);
   padding: 1.5rem 0;
@@ -428,16 +430,15 @@ h3 {
   margin: 0;
   color: #000;
 }
-/* END RECENT BLOG POSTS */
-/* END INDEX MAIN */
 
-/* BLOG POSTS PAGE STYLING */
-/* BLOG MAIN */
+/* ----- BLOG POST HTML STYLING ----- */
+
 main {
   container: sidebar / inline-size;
 }
 
-/* BANNER */
+/* ----- BANNER ----- */
+
 .blog--banner {
   background-image: linear-gradient(to bottom, #0009, #0000),
     url(../images/blog-image-adventurers.jpg);
@@ -462,9 +463,9 @@ ol {
 .banner__tags a {
   font-size: var(--text--font-size);
 }
-/* END BANNER */
 
-/* ARTICLE BODY */
+/* ----- ARTICLE BODY ----- */
+
 .article--body .grid {
   margin-top: 2em;
   display: grid;
@@ -505,12 +506,14 @@ ol {
   cursor: pointer;
 }
 
-/* ARTICLE INTRO */
+/* ----- ARTICLE INTRO ----- */
+
 .article--intro {
   grid-area: intro;
 }
 
-/* ARTICLE CALL OUT */
+/* ----- ARTICLE CALL OUT ----- */
+
 .article--call-out {
   grid-area: callout;
 }
@@ -526,9 +529,9 @@ ol {
 .article--call-out p {
   margin: 0;
 }
-/* END ARTICLE CALL OUT */
 
-/* .ARTICLE CONTENT */
+/* ----- ARTICLE CONTENT ----- */
+
 .article--content {
   grid-area: content;
 }
@@ -547,15 +550,13 @@ ol {
 .article--content a:hover {
   color: var(--secondary-color);
 }
-/* END ARTICLE CONTENT */
 
-/* ARTICLE FOOTER */
+/* ----- ARTICLE FOOTER ----- */
 .article--footer {
   grid-area: footer;
 }
-/* ARTICLE FOOTER END */
 
-/* RELATED BLOG POSTS */
+/* ----- RELATED BLOG POSTS ----- */
 .related--blog--posts {
   margin: 0 0 1rem;
 }
@@ -603,10 +604,9 @@ ol {
   color: #000;
   font-size: 1rem;
 }
-/* END RELATED BLOG POSTS */
-/* END MAIN */
 
-/* FOOTER */
+/* ----- FOOTER ----- */
+
 .footer {
   border-bottom: 0.225rem solid var(--accent-color);
   background-color: var(--dominant-color);
@@ -666,11 +666,12 @@ ol {
 .footer__notice small {
   font-size: var(--small--font-size);
 }
-/* END FOOTER */
 
-/* MEDIA QUERIES */
-/* MEDIA QUERY 45EM */
+/* ----- MEDIA QUERY 45EM ----- */
+
 @media only screen and (min-width: 45em) {
+  /* ----- TYPOGRAPHY ----- */
+
   h1 {
     --h1--font-size: 1.802rem;
   }
@@ -687,7 +688,8 @@ ol {
     --small--font-size: 0.889rem;
   }
 
-  /* BANNER 45EM */
+  /* ----- BANNER ----- */
+
   .banner {
     --banner--height: 55vh;
     --banner--horizontal--alignment: center;
@@ -698,7 +700,8 @@ ol {
     --text--font-size: 1.15rem;
   }
 
-  /* CARD-GROUP 45EM */
+  /* ----- CARD-GROUP ----- */
+
   .card--group {
     padding: 4rem 2.5rem;
   }
@@ -707,7 +710,8 @@ ol {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* RECENT BLOG POSTS 45EM */
+  /* ----- RECENT BLOG POSTS -----*/
+
   .recent--blog--posts {
     padding: 4rem 2.5rem;
   }
@@ -721,9 +725,10 @@ ol {
   }
 }
 
-/* MEDIA QUERY 65EM */
+/* ----- MEDIA QUERY 65EM ----- */
 @media only screen and (min-width: 65em) {
-  /* HEADER 65EM*/
+  /* ----- HEADER ----- */
+
   .header .container {
     padding: 0;
   }
@@ -748,7 +753,8 @@ ol {
     display: none;
   }
 
-  /* BANNER 65EM*/
+  /* ----- BANNER ----- */
+
   .banner {
     --banner--height: 70vh;
     --banner--horizontal--alignment: flex-start;
@@ -758,7 +764,8 @@ ol {
     --text-align: left;
   }
 
-  /* CARD GROUP 65EM*/
+  /* ----- CARD GROUP ----- */
+
   .card--group .container--grid {
     grid-template-columns: repeat(3, 1fr);
 
@@ -766,7 +773,8 @@ ol {
     padding-bottom: 7rem;
   }
 
-  /* ABOUT 65EM*/
+  /* ----- ABOUT ----- */
+
   .about .container--grid {
     grid-template-columns: repeat(2, 1fr);
     padding-top: 7rem;
@@ -777,7 +785,8 @@ ol {
     margin: auto;
   }
 
-  /* RECENT BLOG POSTS 65EM*/
+  /* ----- RECENT BLOG POSTS ----- */
+
   .recent--blog--posts {
     padding: 6rem 4.5rem;
   }
@@ -823,8 +832,10 @@ ol {
     align-items: flex-start;
   }
 
-  /* BLOG POSTS  */
-  /* BANNER */
+  /* ----- BLOG POSTS ----- */
+
+  /* ----- BANNER ----- */
+
   .blog--banner .banner__title {
     width: 17em;
   }
