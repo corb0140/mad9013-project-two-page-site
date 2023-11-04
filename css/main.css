@@ -388,11 +388,9 @@ p {
   padding-bottom: 1rem;
   display: grid;
   gap: 0.825rem;
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.about__image {
-  container-type: inline-size;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
 }
 
 .about__image img {
@@ -408,18 +406,6 @@ p {
 
 .about__text {
   color: #000;
-}
-
-@container (min-width: 40em) {
-  .about__image img {
-    aspect-ratio: 6 / 4;
-  }
-}
-
-@container (min-width: 50em) {
-  .about__image img {
-    aspect-ratio: 6 / 3;
-  }
 }
 
 /* ----- RECENT BLOG POSTS ----- */
@@ -723,6 +709,12 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* ----- ABOUT ----- */
+
+  .about .container--grid {
+    padding: 1rem 4rem;
+  }
+
   /* ----- RECENT BLOG POSTS -----*/
 
   .recent--blog-posts {
@@ -796,7 +788,7 @@ p {
   }
 
   .about__content {
-    margin: auto;
+    margin: auto 0 auto 1rem;
   }
 
   /* ----- RECENT BLOG POSTS ----- */
