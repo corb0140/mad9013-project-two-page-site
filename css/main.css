@@ -701,25 +701,11 @@ p {
 
   /* ----- CARD-GROUP ----- */
 
-  .card--group {
-    padding: 4rem 2.5rem;
-  }
-
   .card--group .container--grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* ----- ABOUT ----- */
-
-  .about .container--grid {
-    padding: 1rem 4rem;
-  }
-
   /* ----- RECENT BLOG POSTS -----*/
-
-  .recent--blog-posts {
-    padding: 4rem 2.5rem;
-  }
 
   .recent--blog-posts .container--grid {
     grid-template-columns: repeat(2, 1fr);
@@ -779,7 +765,8 @@ p {
 
   .about .container--grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 7rem 1.5rem;
+    padding-top: 7em;
+    padding-bottom: 7em;
   }
 
   .about__content {
@@ -787,10 +774,6 @@ p {
   }
 
   /* ----- RECENT BLOG POSTS ----- */
-
-  .recent--blog-posts {
-    padding: 6rem 4.5rem;
-  }
 
   .recent--blog-posts .container--grid {
     grid-template-columns: repeat(3, 1fr);
