@@ -556,6 +556,16 @@ p {
 /* ----- ARTICLE FOOTER ----- */
 .article--footer {
   grid-area: footer;
+  background-color: var(--accent-color-light);
+  border-bottom: 0.125rem solid var(--secondary-color);
+}
+
+.article--footer p {
+  padding-top: 1rem;
+}
+
+.article--footer a:hover {
+  color: var(--accent-color);
 }
 
 /* ----- RELATED BLOG POSTS ----- */
