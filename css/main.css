@@ -842,6 +842,13 @@ p {
       "footer sidebar"
       "article sidebar";
     grid-template-columns: 60% 1fr;
+    /* ---------- prof comment ----------
+    
+    Percentages in grid-template-columns can cause
+    problems with gap. This is same layout could be 
+    achieved with `3fr 2fr`, but remain gap safe.
+    
+    ---------- end prof comment ---------- */
   }
 
   .related--blog--posts {
